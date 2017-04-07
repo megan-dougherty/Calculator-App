@@ -1,0 +1,64 @@
+body {
+	background-color: #222;
+	max-width: 500px;
+	margin: 0 auto;
+	font-size: 10px;
+}
+h1{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 2%;
+	color: #e4e2e2;
+}
+
+.answer, .calculation {
+	font-family:'Titillium Web', sans-serif;
+	color: #ffffff;
+	height: 50px;
+	text-align: right;
+	font-size: 40px;
+	line-height: 50px;
+	border: 1px solid white;
+	padding: 15px;
+	margin: 1% 2% 2% 1%;
+	border-radius: 20px;
+	box-shadow: 3px 3px 3px #888888;
+
+}
+
+button {
+	font-family:'Titillium Web', sans-serif;
+	background-color: #a4a4a4;
+	color: #ffffff;
+	border: none;
+	padding: 10px;
+	height: 50px;
+	width: 31%;
+	font-size: 20px;
+	height: 70px;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	padding: 10px 0 12px 1px;
+	box-shadow: 3px 3px 3px #888888;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+button.active {
+	background-color: #f5dd63;
+	border: none;
+}
+
+
+
+button.grey{
+	background-color: #7b8bab;
+}
+
+
+
+
+
