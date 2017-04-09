@@ -22,14 +22,19 @@ $(document).ready(function(){
 		$('.answer').text('');
 	});
 
-	$('button[name="append"]').on('click', function(){
+	$('.button[name="append"]').on('click', function(){
 		if(append == true){
 			append = false;
 		} else {
 			append = true;
 		}
-		$(this).toggleClass('active');
-		
+	});
+
+	$('button[name="back"]').on('click', function(){
+
+		var calc = $('.calculation').text();
+		var shortString = calc.substr(0, calc.length- 1);
+		$('.calculation').text(shortString);
 	});
 	
 

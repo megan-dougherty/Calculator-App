@@ -43,20 +43,21 @@ button {
 	padding: 10px 0 12px 1px;
 	box-shadow: 3px 3px 3px #888888;
 	text-align: center;
-	cursor: pointer;
+	cursor: pointer;	
+	display: inline;
+	
+
+}
+
+.keys button {
+	background-color:  #a4a4a4;
+
 }
 
 
-button.active {
-	background-color: #f5dd63;
-	border: none;
-}
 
 
 
-button.grey{
-	background-color: #7b8bab;
-}
 
 
 
