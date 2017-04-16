@@ -1,34 +1,32 @@
+
 $(document).ready(function(){
 
 	var append = true;
 
-	$('.keys button').on('click', function(){
+	$('.keys').on('click', function(){
 		var value = $(this).val();
-		$('.calculation').append(value);
-
+			$('.calculation').append(value);
 	});
+
 
 	$('button[name="equals"]').on('click', function(){
 		var calc = $('.calculation').text();
-		var answer = eval(calc); 
-		$('.answer').text(answer);
-		if(append != true){
+		var answer = eval(calc);
 			$('.calculation').text(answer);
-		}
+	});
+
+	$('button[name="squareRoot"]').on('click', function(){
+		var calc = $('.calculation').text();
+		var answer = Math.sqrt(calc);
+			$('.calculation').text('')
+			$('.calculation').append(answer);
+
 	});
 
 	$('button[name="clear"]').on('click', function(){
-		$('.calculation').text('');
-		$('.answer').text('');
+		$('.calculation').text('0');
 	});
 
-	$('.button[name="append"]').on('click', function(){
-		if(append == true){
-			append = false;
-		} else {
-			append = true;
-		}
-	});
 
 	$('button[name="back"]').on('click', function(){
 
@@ -39,7 +37,6 @@ $(document).ready(function(){
 	
 
 });
-
 
 
 
